@@ -1,0 +1,23 @@
+{ 
+    "properties": { 
+        "displayName": "Allowed server name pattern", 
+        "description": "Erzwingt Namenskonventionen.", 
+        "mode": "all", 
+        
+        "policyRule": { 
+            "if": { 
+                "allOf": [ 
+                    { 
+                        "not": { 
+                            "field": "name", 
+                            "match": "??##?????????##" 
+                        } 
+                    } 
+                ] 
+            }, 
+            "then": { 
+                "effect": "deny" 
+            } 
+        } 
+    } 
+} 
