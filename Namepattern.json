@@ -1,29 +1,20 @@
-{
-    "properties": {
-        "displayName": "Match multiple name patterns.",
-        "description": "Allows one of multiple naming patterns for resources.",
-        "mode": "indexed",
-        "policyRule": {
-            "if": {
-                "allOf": [
-                    {
-                        "not": {
-                            "field": "name",
-                            "match": "contoso??????"
-                        }
-                    },
-                    {
-                        "not": {
-                            "field": "name",
-                            "match": "contoso-???-##"
-                        }
-                    }
-                ]
-            },
-            "then": {
-                "effect": "deny"
-            }
-        }
-    }
-}
-
+{ 
+   
+        
+        "policyRule": { 
+            "if": { 
+                "allOf": [ 
+                    { 
+                        "not": { 
+                            "field": "name", 
+                            "match": "??##?????????##" 
+                        } 
+                    } 
+                ] 
+            }, 
+            "then": { 
+                "effect": "deny" 
+            } 
+        } 
+    
+} 
