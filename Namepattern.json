@@ -1,20 +1,17 @@
 { 
-   
-        
-        "policyRule": { 
-            "if": { 
-                "allOf": [ 
-                    { 
-                        "not": { 
-                            "field": "name", 
-                            "match": "??##?????????##" 
-                        } 
+    "policyRule": { 
+        "if": { 
+            "allOf": [ 
+                { 
+                    "not": { 
+                        "field": "name", 
+                        "match": "??##?????????##" 
                     } 
-                ] 
-            }, 
-            "then": { 
-                "effect": "deny" 
-            } 
+                } 
+            ] 
+        }, 
+        "then": { 
+            "effect": "deny" 
         } 
-    
+    } 
 } 
